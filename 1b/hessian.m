@@ -1,4 +1,4 @@
-function [H,g]=hessiancsd(fun,X)
+function [H,g]=hessian(fun,X)
 n=length(X);
 H=zeros(n);
 g=zeros(n,1);
