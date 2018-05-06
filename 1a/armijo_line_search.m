@@ -1,11 +1,12 @@
-function a = armijo_line_search(fa, p, x0)
-	theta = 0.5;
-	beta = 0.1;
+function [alfa] = armijo_line_search(fun, p, X0)
+	t = 0.5;
+	b = 0.1;
 	alfa = 1;
-	iterator = 0;
-	x = x0;
-	while (f(x + alfa*p) <= f(x) + (alfa*beta)*grad(x)'*p)
-		a = theta * a;
-		iterator += 1;
+	iter = 0;
+	X = X0;
+	grad = find_grad(fun, X0);
+	while (fun(X + alfa*p) <= fun(X) + (alfa*b)*grad'*p)
+		alfa = t * alfa;
+		iter += 1;
 	end;
 end
