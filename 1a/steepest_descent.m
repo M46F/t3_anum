@@ -9,8 +9,7 @@ function [X, iter] = steepest_descent(fun, X0, maxiter, tol)
 			break;
 		end
 		p = -find_grad(fun, X);
-		% a = armijo_line_search(fun, p, X);
-		a = 1/3;
+		a = armijo_line_search(fun, p, X, maxiter/100);
 		for i=1:n
 			X(i) = X(i) + a*p(i);
 		end
