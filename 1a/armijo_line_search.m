@@ -1,5 +1,5 @@
 function [alfa] = armijo_line_search(fun, p, X0, maxiter)
-	t = 0.5;
+	t = 0.1;
 	b = 0.1;
 	alfa = 1;
 	iter = 0;
