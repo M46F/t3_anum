@@ -17,17 +17,18 @@ testFunction(@nomor3, [x x x x x]');
 
 function testFunction(func, x)
     tic;
-    res = lbfgs(func, x);
+    res = lbfgs(func, x)
     res.X
     toc;
-
+    disp('--------------------------------------------------------------')
     tic;
-    res = ncg(func, x);
+    res = ncg(func, x)
     res.X;
     toc;
-
+    disp('--------------------------------------------------------------')
     tic;
-    res = tn(func, x);
+    res = tn(func, x)
     res.X
     toc;
+    disp('--------------------------------------------------------------')
 end
