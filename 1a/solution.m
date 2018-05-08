@@ -25,7 +25,7 @@ function s = c(X)
 end
 
 tols = [1e-4, 1e-6, 1e-8, 1e-10, 1e-12];
-TXes = [-400 -200 200 400 -400 -200 200 400];
+TXes = [-400,-200,200,400,-400,-200,200,400];
 
 n_power = [1, 2];
 
@@ -42,14 +42,14 @@ for tol=tols
   tol
   fx = 1
   tic; 
-  [sol iter_count, is_converge, norm_grad] = steepest_descent(@a, [1;2] ,500, tol);
+  [sol iter_count, is_converge, norm_grad] = steepest_descent(@a, [1,2] ,500, tol);
   elapsed_time = toc;
   Res = [Res ; [fx, iter_count, tol, is_converge, elapsed_time, norm_grad] ];
   sol1 = [sol1 ; sol];
 
   fx = fx + 1 
   tic; 
-  [sol iter_count, is_converge, norm_grad] = steepest_descent(@b, [1;1;-0.5] ,500, tol);
+  [sol iter_count, is_converge, norm_grad] = steepest_descent(@b, [1,1,-0.5] ,500, tol);
   elapsed_time = toc;
   Res = [Res ; [fx, iter_count, tol, is_converge, elapsed_time, norm_grad] ];
   sol2 = [sol2 ; sol];
