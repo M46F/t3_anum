@@ -1,16 +1,14 @@
-function [alfa] = armijo_line_search(fun, p, X0, maxiter)
-	t = 0.1;
-	b = 0.1;
+function [alfa] = armijo_line_search(fun, X, direction, grad, maxiter)
+	tau = 0.9;
+	beta = 0.75;
 	alfa = 1;
-	iter = 0;
-	X = X0;
 	fX = fun(X);
-	grad = find_grad(fun, X0);
-	while iter < maxiter
-		if(fun(X + alfa*p) <= ((grad'*p)*alfa*b + fX))
+	iter = 0;
+	while maxiter > iter
+		if(fun(X + alfa*direction) <= fX + (alfa* beta*grad' * direction))
 			break;
-		end
-		alfa = t * alfa;
+		end;
+		alfa = tau * alfa;
 		iter += 1;
 	end;
 end
