@@ -39,7 +39,7 @@ sol6 = [];
 sol7 = [];
 % fx, jumlah iterasi, tolerance, apakah converge, elapsed time
 for tol=tols
-
+  tol
   fx = 1
   tic; 
   [sol iter_count, is_converge, norm_grad] = newton_method(@a, [1,2] ,100, tol);
