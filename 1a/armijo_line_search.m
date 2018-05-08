@@ -5,7 +5,7 @@ function [alfa] = armijo_line_search(fun, X, direction, grad)
 	fX = fun(X);
 	iter = 0;
 	while 1000 > iter
-		if(fun(X + alfa*direction) <= fX + (alfa* beta*grad' * direction))
+		if(fun(X + alfa*direction') <= fX + (alfa* beta*grad' * direction))
 			break;
 		end;
 		alfa = tau * alfa;
