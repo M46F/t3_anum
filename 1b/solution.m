@@ -1,4 +1,4 @@
-disp("yaho")
+disp('yahoo')
 function s = a(X)
   x = X(1);
   y = X(2);
