@@ -1,0 +1,452 @@
+FUNCTION 1
+Tolerance : 0.0001
+ Iter  FuncEvals       F(X)          ||G(X)||/N        
+------ --------- ---------------- ----------------
+     0         1      10.50000000       5.02493781
+     1         3       0.31936128       0.40119264
+     2         4       0.00002036       0.00320313
+ncg: line search warning = 0
+     3         4       0.00002036       0.00320313
+
+res = 
+
+  <a href="matlab:helpPopup struct" style="font-weight:bold">struct</a> with fields:
+
+             Params: [1×1 inputParser]
+           ExitFlag: 3
+    ExitDescription: 'Relative change in F < RelFuncTol'
+                  X: [2×1 double]
+                  F: 2.0358e-05
+                  G: [2×1 double]
+          FuncEvals: 4
+              Iters: 3
+
+
+ans =
+
+   -0.0064    0.0001
+
+Elapsed time is 0.003937 seconds.
+--------------------------------------------------------------
+ Iter  FuncEvals       F(X)          ||G(X)||/N        
+------ --------- ---------------- ----------------
+     0         1      10.50000000       5.02493781
+     1         3       0.31936128       0.40119264
+     2         5       0.00000000       0.00000000
+
+res = 
+
+  <a href="matlab:helpPopup struct" style="font-weight:bold">struct</a> with fields:
+
+             Params: [1×1 inputParser]
+           ExitFlag: 0
+    ExitDescription: 'Successful termination based on StopTol'
+                  X: [2×1 double]
+                  F: 5.2630e-28
+                  G: [2×1 double]
+          FuncEvals: 5
+              Iters: 2
+
+
+ans =
+
+   1.0e-13 *
+
+   -0.3242    0.0057
+
+Elapsed time is 0.003122 seconds.
+--------------------------------------------------------------
+ Iter  FuncEvals       F(X)          ||G(X)||/N        
+------ --------- ---------------- ----------------
+     0         1      10.50000000       5.02493781
+     1         5       0.31936128       0.40119274
+     2         9       0.00971407       0.15283961
+     3        13       0.00029548       0.01220330
+     4        19       0.00000000       0.00000000
+
+res = 
+
+  <a href="matlab:helpPopup struct" style="font-weight:bold">struct</a> with fields:
+
+             Params: [1×1 inputParser]
+           ExitFlag: 0
+    ExitDescription: 'Successful termination based on StopTol'
+                  X: [2×1 double]
+                  F: 7.5519e-20
+                  G: [2×1 double]
+          FuncEvals: 19
+              Iters: 4
+
+
+ans =
+
+   1.0e-09 *
+
+    0.3875    0.0132
+
+Elapsed time is 0.003698 seconds.
+--------------------------------------------------------------
+Tolerance : 1e-06
+ Iter  FuncEvals       F(X)          ||G(X)||/N        
+------ --------- ---------------- ----------------
+     0         1      10.50000000       5.02493781
+     1         3       0.31936128       0.40119264
+     2         4       0.00002036       0.00320313
+ncg: line search warning = 0
+     3         4       0.00002036       0.00320313
+
+res = 
+
+  <a href="matlab:helpPopup struct" style="font-weight:bold">struct</a> with fields:
+
+             Params: [1×1 inputParser]
+           ExitFlag: 3
+    ExitDescription: 'Relative change in F < RelFuncTol'
+                  X: [2×1 double]
+                  F: 2.0358e-05
+                  G: [2×1 double]
+          FuncEvals: 4
+              Iters: 3
+
+
+ans =
+
+   -0.0064    0.0001
+
+Elapsed time is 0.002495 seconds.
+--------------------------------------------------------------
+ Iter  FuncEvals       F(X)          ||G(X)||/N        
+------ --------- ---------------- ----------------
+     0         1      10.50000000       5.02493781
+     1         3       0.31936128       0.40119264
+     2         5       0.00000000       0.00000000
+
+res = 
+
+  <a href="matlab:helpPopup struct" style="font-weight:bold">struct</a> with fields:
+
+             Params: [1×1 inputParser]
+           ExitFlag: 0
+    ExitDescription: 'Successful termination based on StopTol'
+                  X: [2×1 double]
+                  F: 5.2630e-28
+                  G: [2×1 double]
+          FuncEvals: 5
+              Iters: 2
+
+
+ans =
+
+   1.0e-13 *
+
+   -0.3242    0.0057
+
+Elapsed time is 0.002529 seconds.
+--------------------------------------------------------------
+ Iter  FuncEvals       F(X)          ||G(X)||/N        
+------ --------- ---------------- ----------------
+     0         1      10.50000000       5.02493781
+     1         5       0.31936128       0.40119274
+     2         9       0.00971407       0.15283961
+     3        13       0.00029548       0.01220330
+     4        19       0.00000000       0.00000000
+
+res = 
+
+  <a href="matlab:helpPopup struct" style="font-weight:bold">struct</a> with fields:
+
+             Params: [1×1 inputParser]
+           ExitFlag: 0
+    ExitDescription: 'Successful termination based on StopTol'
+                  X: [2×1 double]
+                  F: 7.5519e-20
+                  G: [2×1 double]
+          FuncEvals: 19
+              Iters: 4
+
+
+ans =
+
+   1.0e-09 *
+
+    0.3875    0.0132
+
+Elapsed time is 0.003533 seconds.
+--------------------------------------------------------------
+Tolerance : 1e-08
+ Iter  FuncEvals       F(X)          ||G(X)||/N        
+------ --------- ---------------- ----------------
+     0         1      10.50000000       5.02493781
+     1         3       0.31936128       0.40119264
+     2         4       0.00002036       0.00320313
+ncg: line search warning = 0
+     3         4       0.00002036       0.00320313
+
+res = 
+
+  <a href="matlab:helpPopup struct" style="font-weight:bold">struct</a> with fields:
+
+             Params: [1×1 inputParser]
+           ExitFlag: 3
+    ExitDescription: 'Relative change in F < RelFuncTol'
+                  X: [2×1 double]
+                  F: 2.0358e-05
+                  G: [2×1 double]
+          FuncEvals: 4
+              Iters: 3
+
+
+ans =
+
+   -0.0064    0.0001
+
+Elapsed time is 0.002483 seconds.
+--------------------------------------------------------------
+ Iter  FuncEvals       F(X)          ||G(X)||/N        
+------ --------- ---------------- ----------------
+     0         1      10.50000000       5.02493781
+     1         3       0.31936128       0.40119264
+     2         5       0.00000000       0.00000000
+
+res = 
+
+  <a href="matlab:helpPopup struct" style="font-weight:bold">struct</a> with fields:
+
+             Params: [1×1 inputParser]
+           ExitFlag: 0
+    ExitDescription: 'Successful termination based on StopTol'
+                  X: [2×1 double]
+                  F: 5.2630e-28
+                  G: [2×1 double]
+          FuncEvals: 5
+              Iters: 2
+
+
+ans =
+
+   1.0e-13 *
+
+   -0.3242    0.0057
+
+Elapsed time is 0.003096 seconds.
+--------------------------------------------------------------
+ Iter  FuncEvals       F(X)          ||G(X)||/N        
+------ --------- ---------------- ----------------
+     0         1      10.50000000       5.02493781
+     1         5       0.31936128       0.40119274
+     2         9       0.00971407       0.15283961
+     3        13       0.00029548       0.01220330
+     4        19       0.00000000       0.00000000
+
+res = 
+
+  <a href="matlab:helpPopup struct" style="font-weight:bold">struct</a> with fields:
+
+             Params: [1×1 inputParser]
+           ExitFlag: 0
+    ExitDescription: 'Successful termination based on StopTol'
+                  X: [2×1 double]
+                  F: 7.5519e-20
+                  G: [2×1 double]
+          FuncEvals: 19
+              Iters: 4
+
+
+ans =
+
+   1.0e-09 *
+
+    0.3875    0.0132
+
+Elapsed time is 0.003658 seconds.
+--------------------------------------------------------------
+Tolerance : 1e-10
+ Iter  FuncEvals       F(X)          ||G(X)||/N        
+------ --------- ---------------- ----------------
+     0         1      10.50000000       5.02493781
+     1         3       0.31936128       0.40119264
+     2         4       0.00002036       0.00320313
+ncg: line search warning = 0
+     3         4       0.00002036       0.00320313
+
+res = 
+
+  <a href="matlab:helpPopup struct" style="font-weight:bold">struct</a> with fields:
+
+             Params: [1×1 inputParser]
+           ExitFlag: 3
+    ExitDescription: 'Relative change in F < RelFuncTol'
+                  X: [2×1 double]
+                  F: 2.0358e-05
+                  G: [2×1 double]
+          FuncEvals: 4
+              Iters: 3
+
+
+ans =
+
+   -0.0064    0.0001
+
+Elapsed time is 0.002557 seconds.
+--------------------------------------------------------------
+ Iter  FuncEvals       F(X)          ||G(X)||/N        
+------ --------- ---------------- ----------------
+     0         1      10.50000000       5.02493781
+     1         3       0.31936128       0.40119264
+     2         5       0.00000000       0.00000000
+
+res = 
+
+  <a href="matlab:helpPopup struct" style="font-weight:bold">struct</a> with fields:
+
+             Params: [1×1 inputParser]
+           ExitFlag: 0
+    ExitDescription: 'Successful termination based on StopTol'
+                  X: [2×1 double]
+                  F: 5.2630e-28
+                  G: [2×1 double]
+          FuncEvals: 5
+              Iters: 2
+
+
+ans =
+
+   1.0e-13 *
+
+   -0.3242    0.0057
+
+Elapsed time is 0.002040 seconds.
+--------------------------------------------------------------
+ Iter  FuncEvals       F(X)          ||G(X)||/N        
+------ --------- ---------------- ----------------
+     0         1      10.50000000       5.02493781
+     1         5       0.31936128       0.40119274
+     2         9       0.00971407       0.15283961
+     3        13       0.00029548       0.01220330
+     4        19       0.00000000       0.00000000
+[Warning: Input tol may not be achievable by SYMMLQ
+         Try to use a bigger tolerance] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('symmlq', '/usr/local/MATLAB/R2018a/toolbox/matlab/sparfun/symmlq.m', 102)" style="font-weight:bold">symmlq</a> (<a href="matlab: opentoline('/usr/local/MATLAB/R2018a/toolbox/matlab/sparfun/symmlq.m',102,0)">line 102</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('tn', '/home/sandi/Downloads/poblano_toolbox/tn.m', 133)" style="font-weight:bold">tn</a> (<a href="matlab: opentoline('/home/sandi/Downloads/poblano_toolbox/tn.m',133,0)">line 133</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('test>testFunction', '/home/sandi/Documents/t3_anum/2/test.m', 42)" style="font-weight:bold">test>testFunction</a> (<a href="matlab: opentoline('/home/sandi/Documents/t3_anum/2/test.m',42,0)">line 42</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('test', '/home/sandi/Documents/t3_anum/2/test.m', 6)" style="font-weight:bold">test</a> (<a href="matlab: opentoline('/home/sandi/Documents/t3_anum/2/test.m',6,0)">line 6</a>)] 
+tn: line search warning = 0
+     5        27       0.00000000       0.00000000
+
+res = 
+
+  <a href="matlab:helpPopup struct" style="font-weight:bold">struct</a> with fields:
+
+             Params: [1×1 inputParser]
+           ExitFlag: 3
+    ExitDescription: 'Relative change in F < RelFuncTol'
+                  X: [2×1 double]
+                  F: 6.1268e-21
+                  G: [2×1 double]
+          FuncEvals: 27
+              Iters: 5
+
+
+ans =
+
+   1.0e-10 *
+
+    0.3953   -0.4624
+
+Elapsed time is 0.018156 seconds.
+--------------------------------------------------------------
+Tolerance : 1e-12
+ Iter  FuncEvals       F(X)          ||G(X)||/N        
+------ --------- ---------------- ----------------
+     0         1      10.50000000       5.02493781
+     1         3       0.31936128       0.40119264
+     2         4       0.00002036       0.00320313
+ncg: line search warning = 0
+     3         4       0.00002036       0.00320313
+
+res = 
+
+  <a href="matlab:helpPopup struct" style="font-weight:bold">struct</a> with fields:
+
+             Params: [1×1 inputParser]
+           ExitFlag: 3
+    ExitDescription: 'Relative change in F < RelFuncTol'
+                  X: [2×1 double]
+                  F: 2.0358e-05
+                  G: [2×1 double]
+          FuncEvals: 4
+              Iters: 3
+
+
+ans =
+
+   -0.0064    0.0001
+
+Elapsed time is 0.003023 seconds.
+--------------------------------------------------------------
+ Iter  FuncEvals       F(X)          ||G(X)||/N        
+------ --------- ---------------- ----------------
+     0         1      10.50000000       5.02493781
+     1         3       0.31936128       0.40119264
+     2         5       0.00000000       0.00000000
+
+res = 
+
+  <a href="matlab:helpPopup struct" style="font-weight:bold">struct</a> with fields:
+
+             Params: [1×1 inputParser]
+           ExitFlag: 0
+    ExitDescription: 'Successful termination based on StopTol'
+                  X: [2×1 double]
+                  F: 5.2630e-28
+                  G: [2×1 double]
+          FuncEvals: 5
+              Iters: 2
+
+
+ans =
+
+   1.0e-13 *
+
+   -0.3242    0.0057
+
+Elapsed time is 0.002394 seconds.
+--------------------------------------------------------------
+ Iter  FuncEvals       F(X)          ||G(X)||/N        
+------ --------- ---------------- ----------------
+     0         1      10.50000000       5.02493781
+     1         5       0.31936128       0.40119274
+     2         9       0.00971407       0.15283961
+     3        13       0.00029548       0.01220330
+     4        19       0.00000000       0.00000000
+[Warning: Input tol may not be achievable by SYMMLQ
+         Try to use a bigger tolerance] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('symmlq', '/usr/local/MATLAB/R2018a/toolbox/matlab/sparfun/symmlq.m', 102)" style="font-weight:bold">symmlq</a> (<a href="matlab: opentoline('/usr/local/MATLAB/R2018a/toolbox/matlab/sparfun/symmlq.m',102,0)">line 102</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('tn', '/home/sandi/Downloads/poblano_toolbox/tn.m', 133)" style="font-weight:bold">tn</a> (<a href="matlab: opentoline('/home/sandi/Downloads/poblano_toolbox/tn.m',133,0)">line 133</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('test>testFunction', '/home/sandi/Documents/t3_anum/2/test.m', 42)" style="font-weight:bold">test>testFunction</a> (<a href="matlab: opentoline('/home/sandi/Documents/t3_anum/2/test.m',42,0)">line 42</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('test', '/home/sandi/Documents/t3_anum/2/test.m', 6)" style="font-weight:bold">test</a> (<a href="matlab: opentoline('/home/sandi/Documents/t3_anum/2/test.m',6,0)">line 6</a>)] 
+tn: line search warning = 0
+     5        27       0.00000000       0.00000000
+
+res = 
+
+  <a href="matlab:helpPopup struct" style="font-weight:bold">struct</a> with fields:
+
+             Params: [1×1 inputParser]
+           ExitFlag: 3
+    ExitDescription: 'Relative change in F < RelFuncTol'
+                  X: [2×1 double]
+                  F: 6.1268e-21
+                  G: [2×1 double]
+          FuncEvals: 27
+              Iters: 5
+
+
+ans =
+
+   1.0e-10 *
+
+    0.3953   -0.4624
+
+Elapsed time is 0.005598 seconds.
+--------------------------------------------------------------
