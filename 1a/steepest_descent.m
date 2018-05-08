@@ -2,17 +2,20 @@ function [X, iter] = steepest_descent(fun, X0, maxiter, tol)
 	X = X0;
 	n = length(X);
 	iter = 0;
+	grad = find_grad(fun, X);
+	direction = -grad;
 	while iter < maxiter
-		grad = find_grad(fun, X);
-		if (abs(norm(find_grad(fun, X), 2)) < tol)
-			iter
+		if (abs(norm(grad, 2)) < tol)
+			disp(iter);
 			break;
 		end
-		p = -find_grad(fun, X);
-		a = armijo_line_search(fun, p, X, maxiter/100);
+		grad = find_grad(fun, X);
+		direction = -grad;
+		alfa = armijo_line_search(fun, X, direction, grad);
 		for i=1:n
-			X(i) = X(i) + a*p(i);
+			X(i) = X(i) + alfa*direction(i);
 		end
+		disp(X);
 		iter += 1;
 	end
 end
