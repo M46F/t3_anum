@@ -15,7 +15,7 @@ function [X, iter, is_converge, norm_grad] = steepest_descent(fun, X0, maxiter, 
 		grad = find_grad(fun, X);
     norm_grad = norm(grad,2);
 		direction = -grad;
-		alfa = armijo_line_search(fun, X, direction, grad);
+		alfa = armijo_line_search(fun, X', direction, grad);
 		for i=1:n
 			X(i) = X(i) + alfa*direction(i);
 		end
