@@ -41,16 +41,16 @@ for tol=tols
 
   fx = 1
   tic; 
-  [sol iter_count, is_converge] = newton_method(@a, [1,2] ,1000, tol);
+  [sol iter_count, is_converge, norm_grad] = newton_method(@a, [1,2] ,1000, tol);
   elapsed_time = toc;
-  Res = [Res ; [fx, iter_count, tol, is_converge, elapsed_time] ];
+  Res = [Res ; [fx, iter_count, tol, is_converge, elapsed_time, norm_grad] ];
   sol1 = [sol1 ; sol];
 
   fx = fx + 1 
   tic; 
-  [sol iter_count, is_converge] = newton_method(@b, [1,1,-0.5] ,1000, tol);
+  [sol iter_count, is_converge, norm_grad] = newton_method(@b, [1,1,-0.5] ,1000, tol);
   elapsed_time = toc;
-  Res = [Res ; [fx, iter_count, tol, is_converge, elapsed_time] ];
+  Res = [Res ; [fx, iter_count, tol, is_converge, elapsed_time, norm_grad] ];
   sol2 = [sol2 ; sol];
 
 
@@ -61,11 +61,11 @@ for tol=tols
     end
 
     fx = fx + 1
+    tic;
+    [sol iter_count, is_converge, norm_grad] = newton_method(@c, temp, 1000, tol);
+    elapsed_time = toc;
+    Res = [Res ; [fx, iter_count, tol, is_converge, elapsed_time, norm_grad] ];
     if (fx == 3)
-      tic;
-      [sol iter_count, is_converge] = newton_method(@c, temp, 1000, tol);
-      elapsed_time = toc;
-      Res = [Res ; [fx, iter_count, tol, is_converge, elapsed_time] ];
       sol3 = [sol3 ; sol];
     elseif(fx == 4)
       sol4 = [sol4 ; sol];
