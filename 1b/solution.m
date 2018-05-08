@@ -1,3 +1,4 @@
+warning('off', 'Octave:possible-matlab-short-circuit-operator');
 disp("yaho")
 function s = a(X)
   x = X(1);
@@ -26,7 +27,7 @@ end
 tols = [1e-4, 1e-6, 1e-8, 1e-10, 1e-12];
 TXes = [-400,-200,200,400,-400,-200,200,400];
 
-n_power = [1, 2, 3, 4, 5];
+n_power = [1, 2, 3];
 
 Res = [];
 sol1 = [];
@@ -41,14 +42,14 @@ for tol=tols
 
   fx = 1
   tic; 
-  [sol iter_count, is_converge, norm_grad] = newton_method(@a, [1,2] ,1000, tol);
+  [sol iter_count, is_converge, norm_grad] = newton_method(@a, [1,2] ,100, tol);
   elapsed_time = toc;
   Res = [Res ; [fx, iter_count, tol, is_converge, elapsed_time, norm_grad] ];
   sol1 = [sol1 ; sol];
 
   fx = fx + 1 
   tic; 
-  [sol iter_count, is_converge, norm_grad] = newton_method(@b, [1,1,-0.5] ,1000, tol);
+  [sol iter_count, is_converge, norm_grad] = newton_method(@b, [1,1,-0.5] ,100, tol);
   elapsed_time = toc;
   Res = [Res ; [fx, iter_count, tol, is_converge, elapsed_time, norm_grad] ];
   sol2 = [sol2 ; sol];
@@ -62,7 +63,7 @@ for tol=tols
 
     fx = fx + 1
     tic;
-    [sol iter_count, is_converge, norm_grad] = newton_method(@c, temp, 1000, tol);
+    [sol iter_count, is_converge, norm_grad] = newton_method(@c, temp, 100, tol);
     elapsed_time = toc;
     Res = [Res ; [fx, iter_count, tol, is_converge, elapsed_time, norm_grad] ];
     if (fx == 3)
