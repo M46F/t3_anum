@@ -6,8 +6,9 @@ function [f,g] = nomor3(x)
     f = 1 + sum((x.^2)/4000) - prod(x_temp);
     
     g = ones(1, length(x));
+    prod_cos = prod(x_temp);
     for n = 1:length(x)
-        g(n) = x(n)/2000 + tan(x(n)/sqrt(n)) * prod(x_temp) / sqrt(n);
+        g(n) = x(n)/2000 + tan(x(n)/sqrt(n)) * prod_cos / sqrt(n);
     end
     g = g';
 end
